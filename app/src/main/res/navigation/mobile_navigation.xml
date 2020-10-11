@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_en_vn">
+
+    <fragment
+        android:id="@+id/nav_en_vn"
+        android:name="com.example.dictionaryapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_en_vn_to_detail_word2"
+            app:destination="@id/detail_word" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_vn_en"
+        android:name="com.example.dictionaryapp.ui.vie_eng.VieEngFragment"
+        android:label="@string/menu_vie_eng"
+        tools:layout="@layout/fragment_vie_eng" >
+        <action
+            android:id="@+id/action_nav_vn_en_to_detail_word"
+            app:destination="@id/detail_word" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="com.example.dictionaryapp.ui.favorites.FavoritesFragment"
+        android:label="@string/menu_favorite"
+        tools:layout="@layout/fragment_favorite"/>
+    <fragment
+        android:id="@+id/detail_word"
+        android:name="com.example.dictionaryapp.DetailWord"
+        android:label="Vocabulary"
+        tools:layout="@layout/fragment_detail_word" />
+    <fragment
+        android:id="@+id/nav_your_word"
+        android:name="com.example.dictionaryapp.ui.yourword.YourWordFragment"
+        android:label="Your word"
+        tools:layout="@layout/fragment_nav_your_word" />
+    <fragment
+        android:id="@+id/favoriteEnglishFragment"
+        android:name="com.example.dictionaryapp.ui.favorites.FavoriteEnglishFragment"
+        android:label="fragment_favorite_english"
+        tools:layout="@layout/fragment_favorite_english" >
+        <action
+            android:id="@+id/action_favoriteEnglishFragment_to_detail_word"
+            app:destination="@id/detail_word" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteVietnameseFragment"
+        android:name="com.example.dictionaryapp.ui.favorites.FavoriteVietnameseFragment"
+        android:label="fragment_favorite_vietnamese"
+        tools:layout="@layout/fragment_favorite_vietnamese" >
+        <action
+            android:id="@+id/action_favoriteVietnameseFragment_to_detail_word"
+            app:destination="@id/detail_word" />
+    </fragment>
+</navigation>

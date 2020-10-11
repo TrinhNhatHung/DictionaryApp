@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_en_vn"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="English-Vietnamese" />
+        <item
+            android:id="@+id/nav_vn_en"
+            android:icon="@drawable/ic_baseline_edit_24"
+            android:title="Vietnamese-English" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="Favorites" />
+        <item
+            android:id="@+id/nav_your_word"
+            android:icon="@drawable/ic_baseline_book_24"
+            android:title="Your word"/>
+    </group>
+</menu>
